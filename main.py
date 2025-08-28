@@ -45,7 +45,7 @@ def scrape_profile(username):
                 regex_found_links.append(match)
 
         # Method 3: Look for specific class patterns that might contain Discord links
-        # Based on your screenshots, look for elements with classes containing "creator-detail-links"
+        
         creator_detail_elements = soup.find_all(class_=re.compile(r'creator-detail-links'))
         nested_links = []
         for element in creator_detail_elements:
